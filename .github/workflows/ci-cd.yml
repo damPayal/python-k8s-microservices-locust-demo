@@ -38,22 +38,7 @@ jobs:
           push: true
           tags: docker.io/${{ secrets.DOCKER_USERNAME }}/order-service:latest
 
-      - name: Set up kubectl
-        uses: azure/setup-kubectl@v3
-        with:
-          version: 'v1.28.0'
-
-      - name: Configure kubeconfig
-        run: |
-          mkdir -p $HOME/.kube
-          echo "${{ secrets.KUBECONFIG }}" > $HOME/.kube/config
-
-      - name: Deploy to Kubernetes
-        run: |
-          kubectl apply -f k8s/namespace.yaml
-          kubectl apply -f k8s/catalog.yaml
-          kubectl apply -f k8s/order.yaml
-          kubectl apply -f k8s/ingress.yaml
+      
 
   perf-test:
     needs: build-and-deploy
