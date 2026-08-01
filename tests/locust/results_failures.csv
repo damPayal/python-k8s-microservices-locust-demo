@@ -1,0 +1,6 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+GET,/catalog/products/1,"gaierror(11001, 'getaddrinfo failed')",37,2026-08-01T08:15:02Z,2026-08-01T08:17:25Z
+GET,/catalog/products/3,"gaierror(11001, 'getaddrinfo failed')",31,2026-08-01T08:15:02Z,2026-08-01T08:17:25Z
+GET,/catalog/products,"gaierror(11001, 'getaddrinfo failed')",331,2026-08-01T08:15:02Z,2026-08-01T08:17:30Z
+POST,/orders,"gaierror(11001, 'getaddrinfo failed')",116,2026-08-01T08:15:02Z,2026-08-01T08:17:30Z
+GET,/catalog/products/2,"gaierror(11001, 'getaddrinfo failed')",41,2026-08-01T08:15:05Z,2026-08-01T08:17:30Z
